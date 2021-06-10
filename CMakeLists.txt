@@ -4,9 +4,9 @@ cmake_minimum_required(VERSION 2.8)
 
 project(CppKoans)
 
-add_definitions(
-  -std=c++0x -g -O0
-)
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS ON)
 
 set(cppkoans_SOURCES
   ${PROJECT_SOURCE_DIR}/cppkoans.cpp
